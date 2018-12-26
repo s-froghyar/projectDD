@@ -9,7 +9,16 @@ import { AddVibe } from '../../components/menucomps/AddVibe';
 
 import styles from './styles';
 
+
+
+
 export default class MenuScreen extends Component {
+
+    loadVibe = (id) =>{
+      console.log("we out here" + id);
+      this.props.navigation.navigate('Vibe');
+    }
+
 
     render(){
       return (
@@ -18,7 +27,9 @@ export default class MenuScreen extends Component {
           leftComponent={{ icon: 'menu', color: '#fff' }}
           centerComponent={{ text: 'ProjectDD', style: { color: '#fff' } }}
           rightComponent={{ icon: 'home', color: '#fff' }}/>
-          <VibeOfDay/>
+          <VibeOfDay
+            goto={this.loadVibe}
+            />
           <VibeOfDay/>
           <VibeOfDay/>
           <AddVibe/>
@@ -26,4 +37,3 @@ export default class MenuScreen extends Component {
       )
     }
   }
-  

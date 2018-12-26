@@ -28,7 +28,19 @@ export default EStyleSheet.create({
     height: 50
   },
   tumb:{
-    backgroundColor: '#003366'
+    backgroundColor: 'lightblue',
+    width: 30,
+    height: 30,
+    borderRadius: 30,
+    borderWidth: .5,
+    borderColor: '#00f2ff',
+    shadowOffset: {width: 0, height: 1},
+    shadowOpacity: 0.5,
+    shadowRadius: 1,
+
+  },
+  inpt : {
+    width: '90%',
 
   }
 
